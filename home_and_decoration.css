@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #E9AFA3;
+    font-family:'Chewy', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* 'Tic-Tac-Toe' Heading*/
+h1{
+    padding: 2rem;
+    font-size: max(5vw, 70px);
+    text-align: center;
+}
+@media (max-width: 500px) {
+    h1{
+        padding-top: 7rem;
+        font-size: 15vw;
+    }
+}
+@media (max-height: 400px) {
+    h1{
+        padding: 0.5rem;
+    }
+}
+
+/*'Play' button and 'Exit' button*/
+.box{
+    height: 60vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#play{
+    height: max(15%, 108px);
+    width: max(30%, 540px);
+    font-size: max(2vw, 36px);
+    border: 0.5em outset #F9DEC9;
+    border-radius: 1000px;
+    cursor: pointer;
+    background: linear-gradient(175deg, #F9DEC9 0% 30%,#a09084 70% 100%);
+}
+#exit{
+    height: max(10%, 72px);
+    width: max(15%, 270px);
+    color: white;
+    font-size: max(1.5vw, 27px);
+    margin-top: 5%;
+    border: 0.5em outset #685044;
+    border-radius: 1000px;
+    cursor: pointer;
+    background: linear-gradient(175deg, #685044 0% 30%, #2b211c 70% 100%);
+}
+#exit_icon{
+    display: none;
+}
+@media (max-width: 700px) {
+    #play{
+        width: 50%;
+    }
+    #exit{
+        width: 25%;
+    }
+}
+
+/*Effects on the 'Play' button*/
+#play:hover{
+    background: linear-gradient(175deg, #F9DEC9 0% 30%, #f9dec900 70% 100%);
+}
+#play:active{
+    background: linear-gradient(175deg, #b89f8f 0% 30%, #f9dec900 70% 100%);
+    border-width: 0.3em;
+}
+/*Effects on the 'Exit' button*/
+#exit:hover{
+    background: linear-gradient(175deg, #685044 0% 30%, #2b211c70 70% 100%);
+}
+#exit:active{
+    background: linear-gradient(175deg, #271e19 0% 30%, #2b211c70 70% 100%);
+    border-width: 0.3em;
+}
+
+/*________________________Styling of the dialog boxes_________________________*/
+
+/*Instructions Dialog Box*/
+dialog{
+    height: 60vh;
+    width: 85vw;
+    position: fixed;
+    bottom: 0%;
+    margin: 7.5vw;
+}

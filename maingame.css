@@ -1,0 +1,274 @@
+/*The container of our game*/
+#game{
+    height: 93vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    background-color: transparent;
+}
+
+/*Design of our game*/
+#mainGame{
+    aspect-ratio: 1/1;
+    height: 80%;
+    margin-left: 10%;
+    background-color: transparent;
+    display: grid;
+    grid-template: 6fr 1fr 6fr 1fr 6fr/  6fr 1fr 6fr 1fr 6fr;
+    justify-self: center;
+}
+.sqr{
+    border-width: 0;
+    background-color: transparent;
+}
+.first{
+    grid-area: 1/1/span 1/span 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.oneX{
+    background-image: url(Cross.png);
+}
+.oneO{
+    background-image: url(Circle.png);
+}
+.second{
+    grid-area: 1/3/span 1/span 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.twoX{
+    background-image: url(Cross.png);
+}
+.twoO{
+    background-image: url(Circle.png);
+}
+.third{
+    grid-area: 1/5/span 1/span 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.threeX{
+    background-image: url(Cross.png);
+}
+.threeO{
+    background-image: url(Circle.png);
+}
+.fourth{
+    grid-area: 3/1/span 1/span 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fourX{
+    background-image: url(Cross.png);
+}
+.fourO{
+    background-image: url(Circle.png);
+}
+.fifth{
+    grid-area: 3/3/span 1/span 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fiveX{
+    background-image: url(Cross.png);
+}
+.fiveO{
+    background-image: url(Circle.png);
+}
+.sixth{
+    grid-area: 3/5/span 1/span 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sixX{
+    background-image: url(Cross.png);
+}
+.sixO{
+    background-image: url(Circle.png);
+}
+.seventh{
+    grid-area: 5/1/span 1/span 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sevenX{
+    background-image: url(Cross.png);
+}
+.sevenO{
+    background-image: url(Circle.png);
+}
+.eighth{
+    grid-area: 5/3/span 1/span 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.eightX{
+    background-image: url(Cross.png);
+}
+.eightO{
+    background-image: url(Circle.png);
+}
+.ninth{
+    grid-area: 5/5/span 1/span 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.nineX{
+    background-image: url(Cross.png);
+}
+.nineO{
+    background-image: url(Circle.png);
+}
+.line1{
+    background-image: url(Black_Drawing_Separator_Line_no_background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-area: 1/2/-1/span 1;
+}
+.line2{
+    background-image: url(Black_Drawing_Separator_Line_no_background1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-area: 2/1/span 1/-1;
+    z-index: 0;
+}
+.line3{
+    background-image: url(Black_Drawing_Separator_Line_no_background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-area: 1/4/-1/span 1;
+}
+.line4{
+    background-image: url(Black_Drawing_Separator_Line_no_background1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-area: 4/1/span 1/-1;
+    z-index: 0;
+}
+
+
+/*Design of our scorecard*/
+#scoreCard{
+    font-size: 2em;
+    text-align: center;
+    background-color: transparent;
+    height: 100%;
+    width: 34vw;
+    border-left: 0.2rem dashed black;
+    position: relative;
+}
+.score{
+    display: flex;
+    justify-content: space-around;
+}
+h2{
+    font-size: 1em;
+}
+
+/*Design of Reset and Home button*/
+.btnContain{
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    height: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reset{
+    font-size: 80%;
+    margin: 2%;
+    height: 30%;
+    width: 40%;
+    border: 0.5em inset #F9DEC9;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(355deg, #F9DEC9 0% 30%,#a09084 70% 100%);
+}
+.home{
+    color: white;
+    font-size: 0.75em;
+    margin: 2%;
+    height: 30%;
+    width: 30%;
+    border: 0.5em inset #685044;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(355deg, #685044 0% 30%, #2b211c 70% 100%);
+}
+.btnContain i{
+    display: none;
+    background-color: transparent;
+}
+h5{
+    background-color: transparent;
+}
+/*Effects*/
+.reset:hover{
+    background: linear-gradient(355deg, #F9DEC9 0% 30%,#a0908400 70% 100%);
+    cursor: pointer;
+}
+.reset:active{
+    background: linear-gradient(355deg, #b89f8f 0% 30%,#a0908400 70% 100%);
+    border-width: 0.3em;
+}
+.home:hover{
+    background: linear-gradient(355deg, #685044 0% 30%, #2b211c00 70% 100%);
+    cursor: pointer;
+}
+.home:active{
+    background: linear-gradient(355deg, #271e19 0% 30%, #2b211c70 70% 100%);
+    border-width: 0.3em;
+}
+
+@media (max-aspect-ratio: 26/21) {
+    #game{
+        flex-direction: column;
+    }
+    #mainGame{
+        margin: 0;
+    }
+    #scoreCard{
+        width: 100vw;
+        border-top: 0.2rem dashed black;
+        border-left-width: 0;
+    }
+    p{
+        display: inline;
+    }
+    .btnContain{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }   
+}
+@media (max-height: 775px) and (max-width: 1000px) {
+    h5{
+        display: none;
+    }
+    .btnContain i{
+        display: inline;
+    }
+}
